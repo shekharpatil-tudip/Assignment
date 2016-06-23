@@ -7,3 +7,6 @@
 #This is the conflict example.
 
 #This is conflict example after commit
+
+#New Changes
+
