@@ -1,0 +1,121 @@
+1) The <!DOCTYPE> Declaration: 
+
+	The <!DOCTYPE> declaration helps the browser to display a web page correctly. 
+	There are different document types on the web.
+	To display a document correctly, the browser must know both type and version.
+	The doctype declaration is not case sensitive. All cases are acceptable.
+	e.g. 1.<!DOCTYPE html>
+	       2.<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	       3.<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+2) HTML Head Tag: 
+
+	The head tag in HTML is the way to tell the browser a few things before it starts rendering the page.
+	You can put your CSS, JavaScript, Meta information, and more in this tag. 
+	Like I said earlier, the head tag will not actually display any content on the page itself. However, you can place content between the <title> </title> tags that will show 		content in the page tab in the browser.
+	  e.g.<html>
+       	       <head>
+       	           <title>HTML Head Tag</title>
+       	       </head>
+	          <body>
+	          </body>
+	       </html>
+
+2) The TITLE Element : 
+
+	You should always include a TITLE element on your web page. As I said above, it is required in HTML 4.01, but there are two other good reasons to do it, such as: 			1.Search engines use the TITLE as the primary means of cataloging sites. 
+	               2.If your web page doesn’t have a descriptive title the search engines will give it a lower ranking than other pages.
+	               3.This is also what displays as the link text in search engine results.It displays at the top of the browser window or in the tab, describing the page in browser.
+	               4.It is what is written when someone bookmarks your site. If people bookmark your site, you want them to remember it was your site and not “untitled”.
+
+
+3) Meta Tags: 
+
+	Aside from the title in the head tag, HTML pages have the ability to use Meta tags.
+	While not explicit to the user, search engines crawl through these Meta tags to help display the best information possible for the user.
+	Now, I said at the top of this page that you can embed CSS and JavaScript in the head tags
+	Meta tags are a great way for webmasters to provide search engines with information about their sites.
+	Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest.
+
+	Quite a few Meta tags exist, but only a few are commonly used:	
+		<!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta charset="utf-8">
+	    <meta name="Description" CONTENT="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages">
+	    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+	    <title>Example Books - high-quality used books for children</title>
+ 	    <meta name="robots" content="noindex,nofollow">
+	    <meta name="description" content=" A description about your HTML page goes here"/>
+		<meta name="keywords" content=" Keywords, about, your, content, goes here"/> (Notice the commas to separate keywords.)
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+
+HTML Paragraphs:
+
+	HTML paragraphs are defined with the <p> tag:
+	e.g. 
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+
+HTML Hyperlink:
+	You can employ links to provide navigation to other content.
+	Hyperlinks are often referred to as anchor tags.
+		1.Absolute links: are generally used for navigation outside your website.
+			An absolute link defines the location of the document in total including the protocol required to get the document.
+				e.g. <a href="http://www.navegabem.com/index.html">Home</a>
+		2.Relative links: the server knows where the current document is. Thus, if we want to link to another document in the same directory, we don't need to write 			out the full URL. All we need to use is the name of the file.
+				e.g. <a href="/index.html">Home</a>
+		3.Internal Anchor Tags: Whenever a user clicks the top link in the example, the browser scrolls to the bottom link no matter how much content is in between 		the two links.
+				e.g. <a href='pageName.html#sampleId'>Go to element with id of sampleId</a>
+Target:
+	_blank	Opens the linked document in a new window or tab
+	_self	Opens the linked document in the same frame as it was clicked (this is default)
+	_parent	Opens the linked document in the parent frame
+	_top	Opens the linked document in the full body of the window
+	framename	Opens the linked document in a named frame
+
+
+HTML Images:
+	explains how to use the image tag to embed images into your HTML document.
+	e.g.<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+		1.src: src is the attribute we set to the link to our image, /images/smiley2.jpg
+ 		2.alt:The alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+ 	  	   <img src="/images/smiley2.jpg" alt="A smiley face I created" width="200"/>
+		3.Image Maps:Use the <map> tag to define an image-map. An image-map is an image with clickable areas.
+		4.Image Floating:The image can float to the right or to the left of a text:
+			<img src="planets.gif" width="145" height="126" alt="Planets"	usemap="#planetmap">
+
+			<map name="planetmap">
+			  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+			  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+			  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+			</map>
+
+HTML Styles
+	Setting the style of an HTML element, can be done with the style attribute.
+	style="property:value;"
+	The property is a CSS property. The value is a CSS value.
+		<body style="background-color:lightgrey;">
+		<h1 style="color:blue;">This is a heading</h1>
+		<h1 style="font-family:verdana;">This is a heading</h1>
+		<h1 style="font-size:300%;">This is a heading</h1>
+		<h1 style="text-align:center;">Centered Heading</h1>
+		
+	<p>This text is normal.</p>
+	<p><b>This text is bold</b>.</p>
+	<p><strong>This text is strong</strong>.</p>
+	<p><i>This text is italic</i>.</p>
+	<p><em>This text is emphasized</em>.</p>
+	<h2>HTML <small>Small</small> Formatting</h2>
+	<h2>HTML <mark>Marked</mark> Formatting</h2>
+	<p>My favorite color is <del>blue</del> red.</p>
+	<p>My favorite <ins>color</ins> is red.</p>
+	<p>This is <sub>subscripted</sub> text.</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+
+HTML Table Tag
+	
